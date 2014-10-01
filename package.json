@@ -1,0 +1,11 @@
+{
+  "name": "Mirrodin-membership",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
+  }
+}
