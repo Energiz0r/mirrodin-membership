@@ -1,5 +1,6 @@
 {
-  "name": "Mirrodin-membership",
+  "name": "mirrodin-membership",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
     "grunt": "*",
