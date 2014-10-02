@@ -1,5 +1,4 @@
 
-
 var Application = function (args) {
     var app = {};
     app.email = args.email;

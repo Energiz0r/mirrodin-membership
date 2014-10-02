@@ -1,6 +1,6 @@
 /*jshint expr: true*/
 
-var Registration = require ("../lib/registration");
+var Registration = require("../lib/registration");
 
 describe("Registration", function(){
 
