@@ -2,6 +2,8 @@
   "name": "mirrodin-membership",
   "version": "0.0.2",
   "dependencies": {
+    "assert": "^1.1.2",
+    "bcrypt-nodejs": "0.0.3",
     "mongodb": "^1.4.18"
   },
   "devDependencies": {

@@ -6,11 +6,12 @@ var Application = function (args) {
     app.confirm = args.confirm;
     app.status = args.status;
     app.message = args.message;
+    app.user = null;
 
     app.isValid = function () {
         return app.status === "validated";
     };
-    
+
     app.setInvalid = function (message) {
         app.status = "invalid";
         app.message = message;
