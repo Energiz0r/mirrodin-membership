@@ -2,6 +2,7 @@
 
 var Registration = require("../lib/registration");
 var database = require("../data/database");
+var assert = require("assert");
 
 describe("Registration", function(){
     var reg = {};
@@ -9,14 +10,17 @@ describe("Registration", function(){
 
     before(function (done) {
         database.getDb(function (err, database) {
+            assert.ok(err === null, err);
+
             reg = new Registration(database);
             db = database;
             done();
         });
     });
-    //Happy path
+
     describe("a valid application", function(){
         var regResult = {};
+        console.log(db);
         before(function (done) {
             db.users.remove({}, function (err, result) {
                 reg.applyForMembership({
@@ -54,7 +58,7 @@ describe("Registration", function(){
             reg.applyForMembership({
                 email: null,
                 password: "awdawd",
-                confirm: "password"}, function (err, result) {
+                confirm: "awdawd"}, function (err, result) {
                 regResult = result;
                 done();
             });
