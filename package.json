@@ -1,7 +1,9 @@
 {
   "name": "mirrodin-membership",
-  "version": "0.0.1",
-  "dependencies": {},
+  "version": "0.0.2",
+  "dependencies": {
+    "mongodb": "^1.4.18"
+  },
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-jshint": "*",
