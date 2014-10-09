@@ -20,7 +20,6 @@ describe("Registration", function(){
 
     describe("a valid application", function(){
         var regResult = {};
-        console.log(db);
         before(function (done) {
             db.users.remove({}, function (err, result) {
                 reg.applyForMembership({

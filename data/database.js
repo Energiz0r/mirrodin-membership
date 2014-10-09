@@ -18,10 +18,9 @@
                         logs: db.collection("logs")
                     };
                     next(null, theDb);
-
                 }
             });
-        }else {
+        } else {
             next(null, theDb);
         }
     };
